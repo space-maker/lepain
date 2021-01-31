@@ -8,6 +8,12 @@ This is a temporary script file.
 print("joyeux anniversaire sale moche")
 
 import platform
+import PIL.Image
+import os
+chemin = os.path.dirname( __file__)+"/doge.jpg"
+chemin = chemin.replace("\\", "/")
+doge=PIL.Image.open(chemin)
+doge.show()
 try:
     import winsound
     beep = winsound.Beep
