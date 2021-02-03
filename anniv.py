@@ -10,7 +10,8 @@ print("joyeux anniversaire sale moche")
 import platform
 import PIL.Image
 import os
-chemin = os.path.dirname( __file__)+"/doge.jpg"
+print( __file__)
+chemin = os.path.dirname(os.path.realpath(__file__))+"/doge.jpg"
 chemin = chemin.replace("\\", "/")
 doge=PIL.Image.open(chemin)
 doge.show()
